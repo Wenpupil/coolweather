@@ -1,13 +1,24 @@
 package com.coolweather.android.util;
 
 import android.text.TextUtils;
+import android.util.Log;
 
+import com.coolweather.android.MyApplication;
 import com.coolweather.android.db.City;
 import com.coolweather.android.db.County;
 import com.coolweather.android.db.Province;
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.util.List;
+
+import interfaces.heweather.com.interfacesmodule.bean.Lang;
+import interfaces.heweather.com.interfacesmodule.bean.Unit;
+import interfaces.heweather.com.interfacesmodule.bean.weather.Weather;
+import interfaces.heweather.com.interfacesmodule.view.HeWeather;
+
 /*
      解析和处理服务器返回的省级数据
  */
@@ -76,4 +87,5 @@ public class Utility {
         }
         return false;
     }
+
 }
